@@ -1,81 +1,55 @@
-# DocuBlériot
 
-Application Android de gestion des documents numériques du Lycée Louis Blériot.
+# Android Studio
 
-## Présentation
+Android Studio is the official Integrated Development Environment (IDE) for Android app development.
 
-DocuBlériot a pour objectif de simplifier la gestion, le remplissage, la signature et le suivi des documents administratifs depuis un téléphone Android ou un ordinateur.
+## Overview
 
-Le projet vise à limiter les impressions papier et à centraliser les documents des utilisateurs.
+Android Studio provides tools for developing, testing, debugging, and building Android applications.
 
-## Fonctionnalités
+## Features
 
-### Gestion des documents
-- Consulter ses documents.
-- Accéder aux détails d'un document.
-- Remplir les champs des formulaires.
-- Prévoir l'importation et la consultation de fichiers PDF.
-- Suivre le statut des documents.
+- Intelligent code editor.
+- Kotlin and Java support.
+- Jetpack Compose tools for modern user interfaces.
+- Android Emulator for testing applications.
+- Gradle build system integration.
+- Debugging and performance analysis tools.
+- APK and Android App Bundle generation.
+- Version control integration.
 
-### Documents pris en charge
-- Convention de stage.
-- Autorisation parentale.
-- Fiche administrative.
-- Documents de l'établissement.
+## Requirements
 
-### Circuit de signature
+- A compatible Windows, macOS, Linux, or ChromeOS system.
+- Android Studio installed.
+- Android SDK and required build tools.
+- JDK compatible with the Android Gradle Plugin.
 
-Le circuit de signature prévu comprend cinq intervenants :
+## Getting Started
 
-1. Élève ou représentant légal.
-2. Enseignant référent.
-3. Tuteur entreprise.
-4. Représentant de l'entreprise.
-5. Chef d'établissement.
+1. Install Android Studio.
+2. Open an existing Android project or create a new one.
+3. Configure the Android SDK.
+4. Synchronize the project with Gradle.
+5. Write and edit application code.
+6. Run the application on an Android device or emulator.
+7. Build the application for distribution.
 
-Chaque intervenant doit pouvoir signer lorsque le document lui est transmis. La progression des signatures doit être visible dans l'application.
+## Development Technologies
 
-### Notifications
-- Réception de nouveaux documents.
-- Documents en attente de remplissage.
-- Documents en attente de signature.
-- Suivi des validations.
+- Kotlin
+- Java
+- Android SDK
+- Jetpack Compose
+- Gradle
+- Android Emulator
 
-## Technologies
+## Documentation
 
-- **Langage :** Kotlin
-- **Interface :** Jetpack Compose
-- **IDE :** Android Studio
-- **Stockage local :** SharedPreferences pour certaines données
-- **Serveur prévu :** PHP
-- **Base de données prévue :** MySQL
-- **Gestion des signatures prévue :** DocuSeal
+Official website: https://developer.android.com/studio
 
-## Installation et lancement
+Android Developers: https://developer.android.com/
 
-1. Ouvrir le projet dans Android Studio.
-2. Attendre la synchronisation Gradle.
-3. Connecter un téléphone Android ou démarrer un émulateur.
-4. Sélectionner la configuration `app`.
-5. Cliquer sur **Run** pour compiler et lancer l'application.
+## License
 
-## Sécurité
-
-Les évolutions du projet devront intégrer :
-- Une authentification des utilisateurs.
-- Des droits d'accès adaptés aux rôles.
-- La protection des documents et des signatures.
-- Une connexion HTTPS en production.
-- Un historique des signatures et des validations.
-
-## État du projet
-
-DocuBlériot est en cours de développement. La connexion complète au serveur, l'automatisation des cinq signatures et la génération des PDF finaux doivent être intégrées et testées avant une utilisation réelle.
-
-## Informations du projet
-
-- **Nom :** DocuBlériot
-- **Établissement :** Lycée Louis Blériot
-- **Plateforme :** Android
-- **Langage :** Kotlin
-- **Objectif :** Gestion numérique des documents et suivi des signatures
+Android Studio is distributed by Google. Refer to the official Android Studio website for licensing and distribution information.

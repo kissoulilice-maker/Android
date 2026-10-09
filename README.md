@@ -1,92 +1,78 @@
+# DocuBlériot
 
-# DocuBlériot — Application Android
+Application Android de gestion des documents numériques du Lycée Louis Blériot.
 
 ## Présentation
 
-DocuBlériot est une application Android destinée à faciliter la gestion des documents numériques du Lycée Louis Blériot.
+DocuBlériot a pour objectif de simplifier la gestion, le remplissage, la signature et le suivi des documents administratifs depuis un téléphone Android ou un ordinateur.
 
-L'application a pour objectif de permettre aux utilisateurs de consulter, remplir, signer et suivre leurs documents depuis leur téléphone.
-
-## Objectifs du projet
-
-- Centraliser les documents associés à un compte.
-- Consulter les conventions de stage et les autorisations parentales.
-- Remplir les documents numériques.
-- Permettre la signature et la validation des documents.
-- Suivre l'avancement des signatures.
-- Informer les utilisateurs lorsqu'un document nécessite leur intervention.
-- Réduire l'utilisation du papier et les impressions.
+Le projet vise à limiter les impressions papier et à centraliser les documents des utilisateurs.
 
 ## Fonctionnalités
 
 ### Gestion des documents
+- Consulter ses documents.
+- Accéder aux détails d'un document.
+- Remplir les champs des formulaires.
+- Prévoir l'importation et la consultation de fichiers PDF.
+- Suivre le statut des documents.
 
-- Affichage des documents.
-- Consultation des détails d'un document.
-- Préparation de l'importation de fichiers PDF.
-- Remplissage des champs d'un document.
+### Documents pris en charge
+- Convention de stage.
+- Autorisation parentale.
+- Fiche administrative.
+- Documents de l'établissement.
 
-### Circuit des cinq signatures
+### Circuit de signature
 
-Une convention de stage doit pouvoir être transmise successivement aux cinq intervenants :
+Le circuit de signature prévu comprend cinq intervenants :
 
-1. Élève ou représentant légal
-2. Enseignant référent
-3. Tuteur entreprise
-4. Représentant de l'entreprise
-5. Chef d'établissement
+1. Élève ou représentant légal.
+2. Enseignant référent.
+3. Tuteur entreprise.
+4. Représentant de l'entreprise.
+5. Chef d'établissement.
 
-L'application doit afficher la progression des signatures et empêcher un intervenant de signer avant que son tour soit arrivé.
+Chaque intervenant doit pouvoir signer lorsque le document lui est transmis. La progression des signatures doit être visible dans l'application.
 
 ### Notifications
+- Réception de nouveaux documents.
+- Documents en attente de remplissage.
+- Documents en attente de signature.
+- Suivi des validations.
 
-- Notification lors de la réception d'un nouveau document.
-- Rappel des documents à compléter ou à signer.
-- Suivi de l'état de validation.
+## Technologies
 
-## Technologies utilisées
+- **Langage :** Kotlin
+- **Interface :** Jetpack Compose
+- **IDE :** Android Studio
+- **Stockage local :** SharedPreferences pour certaines données
+- **Serveur prévu :** PHP
+- **Base de données prévue :** MySQL
+- **Gestion des signatures prévue :** DocuSeal
 
-- Kotlin
-- Jetpack Compose
-- Android Studio
-- SharedPreferences pour certaines données locales
-- PHP pour l'API serveur prévue
-- MySQL pour la base de données serveur prévue
-- DocuSeal pour le circuit de signature prévu
-
-## Installation
-
-### Prérequis
-
-- Android Studio
-- Kotlin et Jetpack Compose
-- Un téléphone Android ou un émulateur compatible
-
-### Lancement
+## Installation et lancement
 
 1. Ouvrir le projet dans Android Studio.
 2. Attendre la synchronisation Gradle.
-3. Sélectionner la configuration `app`.
-4. Connecter un téléphone ou démarrer un émulateur.
-5. Cliquer sur **Run ▶**.
+3. Connecter un téléphone Android ou démarrer un émulateur.
+4. Sélectionner la configuration `app`.
+5. Cliquer sur **Run** pour compiler et lancer l'application.
 
 ## Sécurité
 
-Le projet devra prévoir :
-
-- Une authentification sécurisée.
-- Des autorisations selon le rôle de chaque utilisateur.
+Les évolutions du projet devront intégrer :
+- Une authentification des utilisateurs.
+- Des droits d'accès adaptés aux rôles.
 - La protection des documents et des signatures.
-- Une communication HTTPS en production.
-- Un historique des actions et des validations.
+- Une connexion HTTPS en production.
+- Un historique des signatures et des validations.
 
 ## État du projet
 
-DocuBlériot est en cours de développement.
+DocuBlériot est en cours de développement. La connexion complète au serveur, l'automatisation des cinq signatures et la génération des PDF finaux doivent être intégrées et testées avant une utilisation réelle.
 
-L'intégration complète du serveur, de la base de données, des notifications et du circuit des cinq signatures doit être testée avant une utilisation réelle.
-
-## Informations
+## Informations du projet
 
 - **Nom :** DocuBlériot
 - **Établissement :** Lycée Louis Blériot
